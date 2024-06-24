@@ -1,38 +1,65 @@
+body {
+  background: rgb(245, 240, 175);
+  background: rgb(135, 196, 252);
+  font-family: 'Arial', sans-serif;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.outer-container {
+  max-width: fit-content;
+  margin-top: 50px;
+  align-items: center;
+  height: 75vh;
+  width: 70vh;
+
+  border-radius: 5px;
+  overflow-y: scroll;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-box {
+  padding: 40px;
+  margin: 20px 10px;
+  outline: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  border-color: rgb(23, 14, 2);
+}
+
+.inner-container {
+  display: grid;
+  grid-template-columns: repeat(4, 0.5fr);
+  justify-content: center;
+  margin: 20px;
+  background-color: rgba(226, 232, 252, 0.94);
+  border-radius: 13px;
+  padding: 10px;
+}
+
+.cells {
+  padding: 14px;
+  font-size: large;
+  font-weight: bold;
+  margin: 5px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: rgb(241, 185, 252);
+
+  box-shadow: rgb(252, 95, 244);
+  background: linear-gradient(145deg, #b0c9f3, #68aded);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: all 0.9s ease;
 }
