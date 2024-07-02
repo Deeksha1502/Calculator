@@ -1,6 +1,5 @@
 body {
-  background: rgb(245, 240, 175);
-  background: rgb(135, 196, 252);
+  background:#f0f0f0;
   font-family: 'Arial', sans-serif;
 }
 
@@ -9,6 +8,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.heading {
+ 
+  font-weight: bold;
+  font-style: oblique;
 }
 
 .outer-container {
@@ -20,6 +25,7 @@ body {
 
   border-radius: 5px;
   overflow-y: scroll;
+  overflow-x: scroll;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -42,14 +48,15 @@ body {
   grid-template-columns: repeat(4, 0.5fr);
   justify-content: center;
   margin: 20px;
-  background-color: rgba(226, 232, 252, 0.94);
+  background-color: #f0f0f9;
   border-radius: 13px;
   padding: 10px;
+  max-width: fit-content;
 }
 
 .cells {
   padding: 14px;
-  font-size: large;
+  font-size: larger;
   font-weight: bold;
   margin: 5px;
   height: 60px;
@@ -58,8 +65,9 @@ body {
   border: rgb(241, 185, 252);
 
   box-shadow: rgb(252, 95, 244);
-  background: linear-gradient(145deg, #b0c9f3, #68aded);
-  color: rgb(0, 0, 0);
+  background: linear-gradient(145deg, #2265d1, #40888b);
+  opacity: inherit;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   transition: all 0.9s ease;
 }
